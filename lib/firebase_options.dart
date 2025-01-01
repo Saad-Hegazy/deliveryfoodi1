@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyAnDha73sa2FmGmbiugrdqCnGrVFd_xuqg',
-    appId: '1:836519579068:android:d0235bdd45f945a79fafb9',
+    appId: '1:836519579068:android:85da9998c5e29b4c9fafb9',
     messagingSenderId: '836519579068',
     projectId: 'ecommerce-5ae51',
     storageBucket: 'ecommerce-5ae51.firebasestorage.app',
@@ -59,11 +59,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyA1cwnTFwnaZxPuicZho5DiB-FDlGPOtF4',
-    appId: '1:836519579068:ios:55f49827061f320d9fafb9',
+    appId: '1:836519579068:ios:49a8311609ccc4fc9fafb9',
     messagingSenderId: '836519579068',
     projectId: 'ecommerce-5ae51',
     storageBucket: 'ecommerce-5ae51.firebasestorage.app',
-    iosBundleId: 'com.example.deliveryapp',
+    iosBundleId: 'com.delivery.foodi1',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
