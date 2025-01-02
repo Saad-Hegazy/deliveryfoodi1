@@ -11,8 +11,6 @@ class OrdersArchiveView extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(OrdersArchiveController());
     return Scaffold(
-        backgroundColor: AppColor.backgroundcolor,
-
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.white),
           backgroundColor: AppColor.primaryColor,

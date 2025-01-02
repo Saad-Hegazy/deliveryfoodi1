@@ -30,7 +30,6 @@ class _HomeScreenState extends State<HomeScreen> {
     Get.put(HomeScreenControllerImp());
     return GetBuilder<HomeScreenControllerImp>(
         builder: (controller) => Scaffold(
-          backgroundColor: AppColor.backgroundcolor,
           appBar: AppBar(
             backgroundColor: AppColor.primaryColor,
             title: Text("Orders",style: TextStyle(

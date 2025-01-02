@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       translations: MyTranslation(),
       debugShowCheckedModeBanner: false,
-      title: 'Foodi Delivery',
+      title: 'Foodi1 Delivery',
       locale: controller.language,
       theme: controller.appTheme,
       initialBinding: InitialBindings(),
