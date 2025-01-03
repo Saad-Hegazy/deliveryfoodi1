@@ -25,7 +25,6 @@ class CustomBottomAppBarHome extends StatelessWidget {
                           switch(index){
                             case 0:
                               OrdersPendingController controller = Get.put(OrdersPendingController());
-                              print("$index");
                               controller.refrehOrder();
                               break;
                             case 1:

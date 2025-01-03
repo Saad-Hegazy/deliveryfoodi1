@@ -47,7 +47,7 @@ class CardOrdersList extends GetView<OrdersPendingController> {
                        Get.toNamed(AppRoute.ordersdetails,
                           arguments: {"ordersmodel": listdata});
                     },
-                    color: AppColor.thirdColor,
+                    color: AppColor.primaryColor,
                     textColor: AppColor.secondColor,
                     child: const Text("Details"),
                   ),
@@ -59,7 +59,7 @@ class CardOrdersList extends GetView<OrdersPendingController> {
                            listdata.ordersId.toString(),
                        );
                     },
-                    color: AppColor.thirdColor,
+                    color: AppColor.primaryColor,
                     textColor: AppColor.secondColor,
                     child: const Text("Approve"),
                   )

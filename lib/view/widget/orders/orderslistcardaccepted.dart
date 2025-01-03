@@ -40,7 +40,7 @@ class CardOrdersListAccepted extends GetView<OrdersAcceptedController> {
                       color: AppColor.primaryColor,
                       fontWeight: FontWeight.bold)),
               MaterialButton(
-                color: AppColor.thirdColor,
+                color: AppColor.primaryColor,
                 textColor: AppColor.secondColor,
                 onPressed: (){
                   controller.showOptionImage();
@@ -54,7 +54,7 @@ class CardOrdersListAccepted extends GetView<OrdersAcceptedController> {
                       Get.toNamed(AppRoute.ordersdetails,
                           arguments: {"ordersmodel": listdata});
                     },
-                    color: AppColor.thirdColor,
+                    color: AppColor.primaryColor,
                     textColor: AppColor.secondColor,
                     child: const Text("Details"),
                   ),
@@ -66,7 +66,7 @@ class CardOrdersListAccepted extends GetView<OrdersAcceptedController> {
                           listdata.ordersUsersid.toString()
                       );
                     },
-                    color: AppColor.thirdColor,
+                    color: AppColor.primaryColor,
                     textColor: AppColor.secondColor,
                     child: const Text("Done Delivery"),
                   )

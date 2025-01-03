@@ -66,7 +66,7 @@ class CardOrdersListArchive extends GetView<OrdersArchiveController> {
                         Get.toNamed(AppRoute.ordersdetails,
                            arguments: {"ordersmodel": listdata});
                       },
-                      color: AppColor.thirdColor,
+                      color: AppColor.primaryColor,
                       textColor: AppColor.secondColor,
                       child: const Text("Details"),
                     ),
