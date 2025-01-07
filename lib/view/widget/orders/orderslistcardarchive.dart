@@ -40,8 +40,8 @@ class CardOrdersListArchive extends GetView<OrdersArchiveController> {
               const Divider(),
               Text(
                   "Order Type : ${controller.printOrderType(listdata.ordersType!)}"),
-              Text("Order Price : ${listdata.ordersPrice} \$"),
-              Text("Delivery Price : ${listdata.ordersPricedelivery} \$ "),
+              Text("Order Price : ${listdata.ordersPrice} \S\A\R"),
+              Text("Delivery Price : ${listdata.ordersPricedelivery} \S\A\R"),
               Text(
                   "Payment Method : ${controller.printPaymentMethod(listdata.ordersPaymentmethod!)} "),
               Text(
