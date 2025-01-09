@@ -70,6 +70,7 @@ class OrdersPendingController extends GetxController {
     update();
     var response = await ordersPendingData.approveOrder(
       myServices.sharedPreferences.getString("id")!,
+      myServices.sharedPreferences.getString("username")!,
       userid,
       ordersid,
     );

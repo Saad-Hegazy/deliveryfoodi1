@@ -7,24 +7,8 @@ import '../../core/constant/color.dart';
 import '../../core/services/get_service_key.dart';
 import '../../core/services/notification_service.dart';
 import '../widget/home/custombottomappbarhome.dart';
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
-
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  @override
-  void initState() {
-    NotificationService notificationService=NotificationService();
-    GetServerKey getServerKey=GetServerKey();
-    super.initState();
-    notificationService.requestNotificationPermattion();
-    notificationService.getDeviceToken();
-    getServerKey.getServerKeyToken();
-    FcmService.firbaseInit();
-  }
   @override
   Widget build(BuildContext context) {
     Get.put(HomeScreenControllerImp());

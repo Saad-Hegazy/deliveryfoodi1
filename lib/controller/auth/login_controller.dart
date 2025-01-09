@@ -50,8 +50,8 @@ class LoginControllerImp extends LoginController {
             FirebaseMessaging.instance.subscribeToTopic("delivery${deliveryid}");
 
             NotificationService notificationService =NotificationService();
-            String userDeviceToken =await notificationService.getDeviceToken();
-           myServices.sharedPreferences.setString("userDeviceToken", userDeviceToken);
+            String DeviceToken =await notificationService.getDeviceToken();
+           myServices.sharedPreferences.setString("userDeviceToken", DeviceToken);
             Get.offNamed(AppRoute.homepage);
 
           }
