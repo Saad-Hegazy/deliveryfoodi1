@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:deliveryfoodi1/core/constant/imgaeasset.dart';
 import 'package:get/get.dart';
 import '../../../controller/orders/archive_controller.dart';
 import '../../../core/constant/color.dart';
@@ -7,7 +6,6 @@ import 'package:flutter/material.dart';
 import '../../../core/constant/routes.dart';
 import '../../../data/model/ordersmodel.dart';
 import '../../../linkapi.dart';
-import 'dialograting.dart';
 class CardOrdersListArchive extends GetView<OrdersArchiveController> {
   final OrdersModel listdata;
 
