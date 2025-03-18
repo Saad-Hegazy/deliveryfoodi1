@@ -1,31 +1,21 @@
 class AppLink {
-  static  const String server = "https://foodi1.com/foodi1backend/delivery";
-  static  const String servermain = "https://endpoin.shop/ecommerce";
-
+  static  const String server = "https://foodi1.com/backendfoodi1/delivery";
+  static  const String servermain = "https://foodi1.com/backendfoodi1";
   static  const String imageststatic = "$servermain/upload";
 //========================== Image ============================
   static const String imagestCategories = "$imageststatic/categories";
   static const String imagestItems = "$imageststatic/items";
   static const String imagestOrders = "$imageststatic/orders";
 // =============================================================
-//
-
   static const String notification = "$servermain/notification.php";
-
 // ================================= Auth ========================== //
-
   static const String login = "$server/auth/login.php";
   static const String verifycodessignup = "$server/auth/verfiycode.php";
   static const String resend = "$server/auth/resend.php";
-
 // ================================= ForgetPassword ========================== //
-
   static const String checkEmail = "$server/forgetpassword/checkemail.php";
   static const String resetPassword = "$server/forgetpassword/resetpassword.php";
   static const String verifycodeforgetpassword = "$server/forgetpassword/verifycode.php";
-
-// Home
-  static const String homepage = "$servermain/home.php";
 // ================================= Orders ========================== //
   static const String pendingOrders  = "$server/orders/pending.php";
   static const String viweacceptedOrders  = "$server/orders/accepted.php";
@@ -34,5 +24,4 @@ class AppLink {
   static const String viwearchiveOrders  = "$server/orders/archive.php";
   static const String detailsOrders  = "$server/orders/details.php";
   static const String customerdetails  = "$servermain/orders/customerdetails.php";
-
 }
