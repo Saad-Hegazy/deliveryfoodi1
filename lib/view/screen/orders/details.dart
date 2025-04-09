@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../controller/orders/details_controller.dart';
 import '../../../core/class/handlingdataview.dart';
 import '../../../core/constant/color.dart';
+import '../../../core/constant/routes.dart';
 import '../../../core/functions/translatefatabase.dart';
 import '../../../core/functions/truncatetext.dart';
 import '../../../linkapi.dart';
@@ -113,33 +114,25 @@ class OrdersDetails extends StatelessWidget {
                     ),
                   ),
                   if (controller.ordersModel.ordersType == 0)    Card(
-                    child: Container(
-                        child: ListTile(
-                          title: const Text("Shipping Address",
-                              style: TextStyle(
-                                  color: AppColor.primaryColor,
-                                  fontWeight: FontWeight.bold)),
-                          subtitle: Text(
-                              "${controller.ordersModel.addressCity} ${controller.ordersModel.addressStreet}"),
-                        )),
-                  ),
-                  if (controller.ordersModel.ordersType == 0)    Card(
-                    child: Container(
-                      padding:
-                      EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-                      height: 300,
-                      width: double.infinity,
-                      child: GoogleMap(
-                        mapType: MapType.normal,
-                        markers: controller.markers.toSet(),
-                        initialCameraPosition: controller.cameraPosition!,
-                        onMapCreated: (GoogleMapController controllermap) {
-                          controller.completercontroller!
-                              .complete(controllermap);
-                        },
-                      ),
+                    child: InkWell(
+                      onTap: (){
+                        Get.toNamed(AppRoute.addressdetails,
+                            arguments: {
+                              "lat": controller.ordersModel.addressLat,
+                              "long":  controller.ordersModel.addressLong}
+                        );
+                      },
+                      child: Container(
+                          child: ListTile(
+                            title: const Text("Shipping Address",
+                                style: TextStyle(
+                                    color: AppColor.primaryColor,
+                                    fontWeight: FontWeight.bold)),
+                            subtitle: Text(
+                                "${controller.ordersModel.addressCity} ${controller.ordersModel.addressStreet}"),
+                          )),
                     ),
-                  )
+                  ),
                 ])))),
       ),
     );

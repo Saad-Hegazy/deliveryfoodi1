@@ -11,6 +11,7 @@ class AppRoute {
   static const String ordersdetails = "/ordersdetails";
   static const String Settings = "/Settings";
   static const String OrdersArchiveView = "/OrdersArchiveView";
-
+//Address
+  static const String addressdetails = "/addressdetails";
 
 }

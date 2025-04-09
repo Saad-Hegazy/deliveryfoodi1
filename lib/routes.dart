@@ -6,6 +6,7 @@ import 'package:deliveryfoodi1/view/screen/auth/login.dart';
 import 'package:deliveryfoodi1/view/screen/homescreen.dart';
 import 'package:deliveryfoodi1/view/screen/language.dart';
 import 'package:deliveryfoodi1/view/screen/onboarding.dart';
+import 'package:deliveryfoodi1/view/screen/orders/addressGoogelMap.dart';
 import 'package:deliveryfoodi1/view/screen/orders/archive.dart';
 import 'package:deliveryfoodi1/view/screen/orders/details.dart';
 import 'package:deliveryfoodi1/view/screen/settings.dart';
@@ -30,6 +31,7 @@ List<GetPage<dynamic>>? routes = [
   GetPage(name: AppRoute.ordersdetails, page: () => const OrdersDetails()),
   GetPage(name: AppRoute.Settings, page: () => const Settings()),
   GetPage(name: AppRoute.OrdersArchiveView, page: () => const OrdersArchiveView()),
+  GetPage(name: AppRoute.addressdetails, page: () =>  Addressgoogelmap()),
 
 
 
